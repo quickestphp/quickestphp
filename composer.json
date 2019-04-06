@@ -1,0 +1,35 @@
+{
+  "name": "quickestphp/quickestphp",
+  "description": "Quickest PHP Framework for rapid application development by following good programming practices",
+  "homepage": "https://quickestphp.org",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jonatan Flores",
+      "email": "jonatafloress@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.0",
+    "quickestphp/framework": "dev-master",
+    "robmorgan/phinx": "^0.10.6",
+    "twig/twig": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Test\\": "tests/",
+      "Cake\\Test\\": "vendor/quickestphp/framework/tests/"
+    }
+  }
+}
